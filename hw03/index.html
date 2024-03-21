@@ -185,7 +185,7 @@
   <!-- ------------------------------------------------>
   <div class="row hw12">
     <div class="col-md-12 twenty">
-      心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。心得報告 105 字。
+      這次的作業讓我知道了如何去針對自己掃描完成的稿紙去做標準化的對齊，標準化的對齊對於這種需要大量操作的實驗來說非常重要，標準化可以避免很多不必要的問題，節省時間，謝謝老師和助教讓我了解稿紙校正的過程。
     </div>
   </div>
 
@@ -217,7 +217,7 @@
         </tr>
         <tr>
           <td><input type="checkbox" class="flipswitch" id="myCheckbox4" checked></td>
-          <td id='m4'>4</td>
+          <td id='m4'>2</td>
           <td>Strong baseline - 成功執行切割程式並取得檔案 </td>
         </tr>
         <tr>
@@ -262,7 +262,7 @@
   </div>
   <div class="row hw12">
     <div class="col-md-12 twenty"> 
-      <a href="./src/strong/crop_109590018_胡祐華.7z" download="Strong_109590018_胡祐華">Strong_109590018_胡祐華</a> 
+      <a href="./src/strong/" download="Strong_109590018_胡祐華">Strong_109590018_胡祐華</a> 
       <img src="./src/strong/strong.png" width="1200">
     </div>
   </div>
@@ -289,22 +289,31 @@
   
   function update(){
 
-    var score = 0;
+var score = 0;
 
-    if (d3.select("#myCheckbox1").property("checked")){
-      score += parseInt(d3.select('#m1').html());
-    }
+if (d3.select("#myCheckbox1").property("checked")){
+  score += parseInt(d3.select('#m1').html());
+}
 
-    if (d3.select("#myCheckbox2").property("checked")){
-      score += parseInt(d3.select('#m2').html());   
-    }
+if (d3.select("#myCheckbox2").property("checked")){
+  score += parseInt(d3.select('#m2').html());   
+}
 
-    if (d3.select("#myCheckbox3").property("checked")){
-      score += parseInt(d3.select('#m3').html());   
-    }
+if (d3.select("#myCheckbox3").property("checked")){
+  score += parseInt(d3.select('#m3').html());   
+}
 
-    d3.select("#myTotal").html(score);    
-  }
+if (d3.select("#myCheckbox4").property("checked")){
+  score += parseInt(d3.select('#m4').html());   
+}
+
+if (d3.select("#myCheckbox5").property("checked")){
+  score += parseInt(d3.select('#m5').html());   
+}
+
+d3.select("#myTotal").html(score);    
+}
+
 </script>
 
 </body>
